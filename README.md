@@ -13,7 +13,7 @@ Elles fournissent une approche structurée pour le développement de logiciel, a
 
 | **#**               | **Avancement** |
 | ------------------- | -------------- |
-| TypeScript • NestJS | 0%             |
+| TypeScript • NestJS | 10%             |
 | C# • .NET Framework | 0%             |
 | Java • Spring       | 0%             |
 | C++                 | 0%             |
@@ -35,3 +35,8 @@ Elles fournissent une approche structurée pour le développement de logiciel, a
 | -------------------- | -------------- |
 | Angular • TypeScript | 0%             |
 | Flutter • Dart       | 0%             |
+
+### Schema Hexagonal Architecture
+
+![alt text](<Hexagonal Architecture/Hexagonal.png>)
+
