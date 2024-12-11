@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { GetMoviesService } from '../../src/application/usecase/get-movies.service';
-import { MovieRepository } from '../../src/domain/interface/movie-repository.interface';
-import { Category } from '../../src/domain/domain/category';
+import { MovieRepository } from '../../src/application/interface/movie-repository.interface';
+import { Category } from '../../src/domain/entities/category';
 
 describe('Movies UseCases', () => {
   let getMoviesService: GetMoviesService;

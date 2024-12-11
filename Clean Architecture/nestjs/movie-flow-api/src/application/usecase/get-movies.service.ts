@@ -1,15 +1,10 @@
-import { Inject, Injectable } from '@nestjs/common';
-import { UseCase } from 'src/domain/interface/use-case.interface';
+import { UseCase } from 'src/application/interface/use-case.interface';
 import { MovieDto } from '../dto/movie.dto';
-import { MovieRepository } from 'src/domain/interface/movie-repository.interface';
-import { Movie } from 'src/domain/domain/movie';
+import { MovieRepository } from 'src/application/interface/movie-repository.interface';
+import { Movie } from 'src/domain/entities/movie';
 
-@Injectable()
 export class GetMoviesService implements UseCase<MovieDto[]> {
-  constructor(
-    @Inject('MovieRepository')
-    private readonly movieRepository: MovieRepository,
-  ) {}
+  constructor(private readonly movieRepository: MovieRepository) {}
 
   async execute(): Promise<MovieDto[]> {
     const movies: Movie[] = await this.movieRepository.getMoviesAsync();
