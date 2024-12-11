@@ -1,4 +1,4 @@
-import { Movie } from '../domain/movie';
+import { Movie } from '../../domain/entities/movie';
 
 export interface MovieRepository {
   getMoviesAsync(): Promise<Movie[]>;
